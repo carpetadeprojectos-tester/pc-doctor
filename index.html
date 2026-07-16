@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Doctor - Descargar</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #f8f9fa; color: #212529; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 40px; text-align: center; }
+        .logo-section { margin-bottom: 30px; }
+        .doctor-logo-img { width: 180px; height: 180px; margin: 0 auto 20px; display: block; }
+        h1 { font-size: 36px; color: #28a745; margin-bottom: 10px; font-weight: bold; }
+        .tagline { font-size: 20px; color: #6c757d; margin-bottom: 30px; }
+        .download-btn { display: inline-block; background: linear-gradient(135deg, #007bff, #0056b3); color: white !important; padding: 25px 50px; font-size: 28px; font-weight: bold; border-radius: 50px; text-decoration: none; margin: 20px 0; box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4); transition: transform 0.2s; }
+        .download-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5); }
+        .download-btn::before { content: "⬇ "; }
+        .file-info { font-size: 18px; color: #495057; margin: 15px 0; padding: 15px; background: #e9ecef; border-radius: 8px; display: inline-block; }
+        .instructions { text-align: left; margin: 40px 0; padding: 25px; background: #fff3cd; border-radius: 12px; border-left: 5px solid #ffc107; }
+        .instructions h2 { font-size: 24px; color: #856404; margin-bottom: 15px; text-align: center; }
+        .instructions ol { font-size: 20px; padding-left: 20px; }
+        .instructions li { margin: 12px 0; }
+        .security-section { margin-top: 30px; padding: 20px; background: #d4edda; border-radius: 12px; border: 2px solid #28a745; }
+        .security-section h2 { font-size: 22px; color: #155724; margin-bottom: 15px; }
+        .security-item { font-size: 18px; margin: 10px 0; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .security-item .check { color: #28a745; font-weight: bold; font-size: 24px; }
+        .footer { margin-top: 40px; font-size: 16px; color: #6c757d; }
+        @media (max-width: 600px) { .container { padding: 25px 15px; } h1 { font-size: 28px; } .download-btn { padding: 20px 35px; font-size: 22px; width: 100%; } .doctor-logo-img { width: 140px; height: 140px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-section">
+            <img src="images/logo-doctor-azul.svg" alt="PC Doctor Logo" class="doctor-logo-img" onerror="this.src='data:image/svg+xml;base64,PHN2ZzB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjkwIiBmaWxsPSIjMm84YTI0NCIvPjx0ZXh0IHg9IjEwMCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMzIiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9sPSJtaWRkbGUiPlBDOI0gRE9DVE9SPC90ZXh0Pjwvc3ZnPg=='">
+            <h1>PC Doctor</h1>
+            <p class="tagline">Tu asistente médico digital confiable</p>
+        </div>
+        <a href="downloads/pc-doctor-setup.exe" class="download-btn">Descargar PC Doctor</a>
+        <div class="file-info">📄 Tamaño: 45 MB | Windows 10/11 | Versión 2.1.0</div>
+        <div class="instructions">
+            <h2>📋 Instrucciones de Descarga</h2>
+            <ol>
+                <li>Haga clic en el botón azul de arriba</li>
+                <li>Espere a que se descargue el archivo</li>
+                <li>Busque el archivo en su carpeta "Descargas"</li>
+                <li>Haga doble clic para instalar</li>
+                <li>Siga las instrucciones en pantalla</li>
+            </ol>
+        </div>
+        <div class="security-section">
+            <h2>🔒 Descarga Segura y Verificada</h2>
+            <div class="security-item"><span class="check">✓</span><span>Archivo escaneado contra virus - 100% limpio</span></div>
+            <div class="security-item"><span class="check">✓</span><span>Firma digital verificada - desarrollado por <strong>Equipo PC Doctor</strong></span></div>
+            <div class="security-item"><span class="check">✓</span><span>Conexión segura HTTPS</span></div>
+        </div>
+        <div class="footer">
+            <p>© 2024 PC Doctor - Todos los derechos reservados</p>
+            <p>¿Necesita ayuda? Llame al: <strong>900-123-456</strong></p>
+        </div>
+    </div>
+</body>
+</html>
