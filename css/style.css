@@ -1,0 +1,73 @@
+/* ===== PC Doctor - estilos ===== */
+:root{
+  --azul:#2563eb; --azul-osc:#1e40af; --verde:#10b981; --verde-osc:#059669;
+  --texto:#1f2937; --gris:#6b7280; --blanco:#ffffff; --sombra:0 10px 30px rgba(0,0,0,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Segoe UI',Arial,Helvetica,sans-serif; color:var(--texto); line-height:1.6;
+  background:linear-gradient(135deg,#e0f2fe 0%,#ecfdf5 50%,#fef9c3 100%);
+  background-attachment:fixed; min-height:100vh;
+}
+a{color:var(--azul);text-decoration:none}
+.container{max-width:960px;margin:0 auto;padding:0 20px}
+
+/* Header */
+header{background:rgba(255,255,255,.7);backdrop-filter:blur(8px);position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(0,0,0,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:960px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--azul-osc)}
+.brand svg{width:38px;height:38px}
+.nav a.gh{font-size:14px;color:var(--gris);font-weight:600}
+
+/* Hero */
+.hero{text-align:center;padding:50px 20px 30px}
+.hero .dog{width:170px;height:170px;filter:drop-shadow(0 8px 16px rgba(0,0,0,.15));margin-bottom:10px}
+.hero h1{font-size:42px;color:var(--azul-osc);margin-bottom:8px}
+.hero .tag{font-size:20px;color:var(--gris);margin-bottom:24px}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{padding:14px 28px;border-radius:50px;font-weight:700;font-size:16px;cursor:pointer;border:none;transition:transform .15s,box-shadow .15s;display:inline-block}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--azul),var(--azul-osc));color:#fff;box-shadow:0 6px 18px rgba(37,99,235,.4)}
+.btn-ghost{background:#fff;color:var(--azul-osc);box-shadow:var(--sombra)}
+
+/* Demo interactiva */
+.card{background:#fff;border-radius:18px;box-shadow:var(--sombra);padding:30px;margin:28px 0}
+.card h2{font-size:26px;color:var(--azul-osc);margin-bottom:6px;display:flex;align-items:center;gap:10px}
+.badge-demo{background:#fef3c7;color:#92400e;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;text-transform:uppercase}
+.scan-btn{margin:18px 0 6px}
+.progress{height:14px;background:#e5e7eb;border-radius:10px;overflow:hidden;margin-top:14px;display:none}
+.progress > div{height:100%;width:0;background:linear-gradient(90deg,var(--verde),var(--azul));transition:width .1s linear}
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-top:22px;display:none}
+.metric{background:linear-gradient(135deg,#f0f9ff,#ecfdf5);border-radius:14px;padding:18px;text-align:center}
+.metric .num{font-size:30px;font-weight:800;color:var(--azul)}
+.metric .lab{font-size:14px;color:var(--gris);margin-top:4px}
+.demo-note{font-size:13px;color:var(--gris);margin-top:14px;font-style:italic}
+
+/* Descarga real */
+.dl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+.dl-box{border:2px dashed var(--azul);border-radius:14px;padding:22px;text-align:center}
+.dl-box h3{color:var(--azul-osc);margin-bottom:6px}
+.dl-box p{font-size:14px;color:var(--gris);margin-bottom:14px}
+.dl-box .btn{background:var(--verde);color:#fff;box-shadow:0 4px 12px rgba(16,185,129,.35);font-size:14px;padding:10px 22px}
+
+/* Planes */
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:18px}
+.plan{border-radius:16px;padding:26px;text-align:center;border:2px solid #e5e7eb;background:#fff;position:relative}
+.plan.pro{border-color:var(--azul);box-shadow:0 12px 30px rgba(37,99,235,.18);transform:scale(1.03)}
+.plan .tag-pro{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--azul);color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:20px}
+.plan h3{font-size:22px;color:var(--azul-osc)}
+.plan .price{font-size:34px;font-weight:800;color:var(--verde-osc);margin:10px 0}
+.plan .price span{font-size:15px;color:var(--gris);font-weight:500}
+.plan ul{list-style:none;text-align:left;margin:14px 0 20px}
+.plan li{padding:7px 0;font-size:15px;color:var(--texto);display:flex;gap:8px}
+.plan li::before{content:"✓";color:var(--verde);font-weight:800}
+.plan li.off::before{content:"•";color:var(--gris)}
+.plan li.off{color:var(--gris)}
+
+footer{text-align:center;padding:30px 20px;color:var(--gris);font-size:14px}
+footer a{font-weight:600}
+
+@media(max-width:600px){
+  .hero h1{font-size:32px}.plan.pro{transform:none}
+  .cta{flex-direction:column}
+}

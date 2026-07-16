@@ -1,62 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Doctor - Descargar</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, Helvetica, sans-serif; background: #f8f9fa; color: #212529; padding: 20px; }
-        .container { max-width: 800px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 40px; text-align: center; }
-        .logo-section { margin-bottom: 30px; }
-        .doctor-logo-img { width: 180px; height: 180px; margin: 0 auto 20px; display: block; }
-        h1 { font-size: 36px; color: #28a745; margin-bottom: 10px; font-weight: bold; }
-        .tagline { font-size: 20px; color: #6c757d; margin-bottom: 30px; }
-        .download-btn { display: inline-block; background: linear-gradient(135deg, #007bff, #0056b3); color: white !important; padding: 25px 50px; font-size: 28px; font-weight: bold; border-radius: 50px; text-decoration: none; margin: 20px 0; box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4); transition: transform 0.2s; }
-        .download-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5); }
-        .download-btn::before { content: "⬇ "; }
-        .file-info { font-size: 18px; color: #495057; margin: 15px 0; padding: 15px; background: #e9ecef; border-radius: 8px; display: inline-block; }
-        .instructions { text-align: left; margin: 40px 0; padding: 25px; background: #fff3cd; border-radius: 12px; border-left: 5px solid #ffc107; }
-        .instructions h2 { font-size: 24px; color: #856404; margin-bottom: 15px; text-align: center; }
-        .instructions ol { font-size: 20px; padding-left: 20px; }
-        .instructions li { margin: 12px 0; }
-        .security-section { margin-top: 30px; padding: 20px; background: #d4edda; border-radius: 12px; border: 2px solid #28a745; }
-        .security-section h2 { font-size: 22px; color: #155724; margin-bottom: 15px; }
-        .security-item { font-size: 18px; margin: 10px 0; display: flex; align-items: center; justify-content: center; gap: 10px; }
-        .security-item .check { color: #28a745; font-weight: bold; font-size: 24px; }
-        .footer { margin-top: 40px; font-size: 16px; color: #6c757d; }
-        @media (max-width: 600px) { .container { padding: 25px 15px; } h1 { font-size: 28px; } .download-btn { padding: 20px 35px; font-size: 22px; width: 100%; } .doctor-logo-img { width: 140px; height: 140px; } }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PC Doctor - Diagnóstico de tu PC en un clic</title>
+<link rel="icon" href="images/dog-doctor.svg">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo-section">
-            <img src="images/logo-doctor-azul.svg" alt="PC Doctor Logo" class="doctor-logo-img" onerror="this.src='data:image/svg+xml;base64,PHN2ZzB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjkwIiBmaWxsPSIjMm84YTI0NCIvPjx0ZXh0IHg9IjEwMCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMzIiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9sPSJtaWRkbGUiPlBDOI0gRE9DVE9SPC90ZXh0Pjwvc3ZnPg=='">
-            <h1>PC Doctor</h1>
-            <p class="tagline">Tu asistente médico digital confiable</p>
-        </div>
-        <a href="downloads/pc-doctor-setup.exe" class="download-btn">Descargar PC Doctor</a>
-        <div class="file-info">📄 Tamaño: 45 MB | Windows 10/11 | Versión 2.1.0</div>
-        <div class="instructions">
-            <h2>📋 Instrucciones de Descarga</h2>
-            <ol>
-                <li>Haga clic en el botón azul de arriba</li>
-                <li>Espere a que se descargue el archivo</li>
-                <li>Busque el archivo en su carpeta "Descargas"</li>
-                <li>Haga doble clic para instalar</li>
-                <li>Siga las instrucciones en pantalla</li>
-            </ol>
-        </div>
-        <div class="security-section">
-            <h2>🔒 Descarga Segura y Verificada</h2>
-            <div class="security-item"><span class="check">✓</span><span>Archivo escaneado contra virus - 100% limpio</span></div>
-            <div class="security-item"><span class="check">✓</span><span>Firma digital verificada - desarrollado por <strong>Equipo PC Doctor</strong></span></div>
-            <div class="security-item"><span class="check">✓</span><span>Conexión segura HTTPS</span></div>
-        </div>
-        <div class="footer">
-            <p>© 2024 PC Doctor - Todos los derechos reservados</p>
-            <p>¿Necesita ayuda? Llame al: <strong>900-123-456</strong></p>
-        </div>
+
+<header>
+  <nav class="nav">
+    <div class="brand">
+      <img src="images/dog-doctor.svg" alt="PC Doctor">
+      <span>PC Doctor</span>
     </div>
+    <a class="gh" href="https://github.com/carpetadeprojectos-tester/pc-doctor" target="_blank" rel="noopener">★ GitHub</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img class="dog" src="images/dog-doctor.svg" alt="Perro Doctor">
+  <h1>PC Doctor 🐶</h1>
+  <p class="tag">Tu veterinario de computadoras. Diagnóstico rápido, gratis y sin instalación.</p>
+  <div class="cta">
+    <a class="btn btn-primary" href="#demo">▶ Probar diagnóstico demo</a>
+    <a class="btn btn-ghost" href="#descargar">⬇ Descargar</a>
+  </div>
+</section>
+
+<div class="container">
+
+  <!-- DEMO INTERACTIVA -->
+  <section class="card" id="demo">
+    <h2>🔬 Diagnóstico en vivo <span class="badge-demo">Demo interactiva</span></h2>
+    <p>Esta es una <strong>simulación de ejemplo</strong> del escaneo que hace el programa real en tu PC (CPU, RAM, disco, procesos y errores).</p>
+    <button class="btn btn-primary scan-btn" id="scanBtn" onclick="runScan()">Iniciar escaneo de ejemplo</button>
+    <div class="progress" id="prog"><div></div></div>
+    <div class="results" id="res">
+      <div class="metric"><div class="num" id="m-cpu">–</div><div class="lab">CPU uso</div></div>
+      <div class="metric"><div class="num" id="m-ram">–</div><div class="lab">RAM libre</div></div>
+      <div class="metric"><div class="num" id="m-disk">–</div><div class="lab">Disco libre</div></div>
+      <div class="metric"><div class="num" id="m-err">–</div><div class="lab">Errores sistema</div></div>
+      <div class="metric"><div class="num" id="m-score">–</div><div class="lab">Salud general</div></div>
+      <div class="metric"><div class="num" id="m-time">–</div><div class="lab">Tiempo scan</div></div>
+    </div>
+    <p class="demo-note" id="note">* Datos simulados con fines de demostración. El programa real lee tu hardware verdadero.</p>
+  </section>
+
+  <!-- DESCARGA REAL -->
+  <section class="card" id="descargar">
+    <h2>⬇ Descargar PC Doctor</h2>
+    <p>Es un <strong>script portátil</strong>: se descarga y se ejecuta con doble clic. No requiere instalación ni registro.</p>
+    <div class="dl-grid">
+      <div class="dl-box">
+        <h3>pcdoctor.ps1</h3>
+        <p>El diagnóstico completo (PowerShell).</p>
+        <a class="btn" href="pcdoctor.ps1" download>Descargar .ps1</a>
+      </div>
+      <div class="dl-box">
+        <h3>run.bat</h3>
+        <p>Lanzador: doble clic y listo.</p>
+        <a class="btn" href="run.bat" download>Descargar .bat</a>
+      </div>
+      <div class="dl-box">
+        <h3>GitHub</h3>
+        <p>Código fuente abierto.</p>
+        <a class="btn" href="https://github.com/carpetadeprojectos-tester/pc-doctor" target="_blank" rel="noopener">Ver repo</a>
+      </div>
+    </div>
+    <p class="demo-note">Compatible con Windows 10/11. El script usa herramientas nativas de Windows (Get-WmiObject).</p>
+  </section>
+
+  <!-- PLANES -->
+  <section class="card">
+    <h2>💎 Planes</h2>
+    <p>Gratis para siempre. ¿Quieres más? Prueba la versión Pro de ejemplo.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Gratis</h3>
+        <div class="price">$0<span> / siempre</span></div>
+        <ul>
+          <li>Diagnóstico básico</li>
+          <li>CPU, RAM, disco</li>
+          <li>Reporte en pantalla</li>
+          <li class="off">Limpieza automática</li>
+          <li class="off">Soporte prioritario</li>
+        </ul>
+        <a class="btn btn-ghost" href="#descargar">Empezar gratis</a>
+      </div>
+      <div class="plan pro">
+        <span class="tag-pro">PRO · ejemplo</span>
+        <h3>PC Doctor Pro</h3>
+        <div class="price">$4,99<span> / mes</span></div>
+        <ul>
+          <li> Todo lo de Gratis</li>
+          <li>Limpieza y optimización</li>
+          <li>Monitoreo en tiempo real</li>
+          <li>Alertas de salud</li>
+          <li>Soporte prioritario</li>
+        </ul>
+        <button class="btn btn-primary" onclick="alert('Gracias por tu interés. 🐶\nEsta es una opción de PAGO de EJEMPLO — no se procesa ningún pago real.')">Suscribirme (demo)</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>🐶 PC Doctor — proyecto de ejemplo · <a href="https://github.com/carpetadeprojectos-tester/pc-doctor" target="_blank" rel="noopener">GitHub</a></p>
+  <p>© 2024 PC Doctor. Hecho con cariño para tu computadora.</p>
+</footer>
+
+<script>
+function runScan(){
+  var btn=document.getElementById('scanBtn');
+  var prog=document.getElementById('prog');
+  var bar=prog.firstElementChild;
+  var res=document.getElementById('res');
+  btn.disabled=true; btn.textContent='Escaneando…';
+  prog.style.display='block'; res.style.display='none';
+  var p=0; var t0=Date.now();
+  var iv=setInterval(function(){
+    p+=Math.random()*9+3; if(p>=100)p=100;
+    bar.style.width=p+'%';
+    if(p>=100){
+      clearInterval(iv);
+      var cpu=(Math.random()*60+20).toFixed(0);
+      var ram=(Math.random()*4+0.5).toFixed(1);
+      var disk=(Math.random()*40+40).toFixed(0);
+      var errs=Math.floor(Math.random()*12);
+      var score=Math.max(20,100-errs*4-parseInt(cpu)/3);
+      var ms=(Date.now()-t0);
+      document.getElementById('m-cpu').textContent=cpu+'%';
+      document.getElementById('m-ram').textContent=ram+' GB';
+      document.getElementById('m-disk').textContent=disk+'%';
+      document.getElementById('m-err').textContent=errs;
+      document.getElementById('m-score').textContent=score.toFixed(0)+'%';
+      document.getElementById('m-time').textContent=(ms/1000).toFixed(1)+'s';
+      res.style.display='grid';
+      prog.style.display='none';
+      btn.disabled=false; btn.textContent='Volver a escanear';
+    }
+  },120);
+}
+</script>
 </body>
 </html>
